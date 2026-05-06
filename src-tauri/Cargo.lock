@@ -28,7 +28,7 @@ dependencies = [
  "rsrpc",
  "serde",
  "serde_json",
- "sysinfo",
+ "sysinfo 0.37.2",
  "system-idle-time",
  "tauri",
  "tauri-build",
@@ -4380,8 +4380,8 @@ checksum = "3582f63211428f83597b51b2ddb88e2a91a9d52d12831f9d08f5e624e8977422"
 
 [[package]]
 name = "rsrpc"
-version = "0.26.0"
-source = "git+https://www.github.com/SpikeHD/rsRPC?tag=v0.26.0#4ff3d5ebc43431ea46d49f2a9bcca923b55c58a6"
+version = "0.27.1"
+source = "git+https://www.github.com/SpikeHD/rsRPC?tag=v0.27.1#21526550ba3ee47d527ba001cf116e864f77d1a6"
 dependencies = [
  "aho-corasick",
  "chrono",
@@ -4390,7 +4390,7 @@ dependencies = [
  "serde_json",
  "serde_with",
  "simple-websockets",
- "sysinfo",
+ "sysinfo 0.38.4",
  "winapi",
 ]
 
@@ -5120,8 +5120,22 @@ dependencies = [
  "ntapi",
  "objc2-core-foundation",
  "objc2-io-kit",
- "rayon",
  "windows 0.61.3",
+]
+
+[[package]]
+name = "sysinfo"
+version = "0.38.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "92ab6a2f8bfe508deb3c6406578252e491d299cbbf3bc0529ecc3313aee4a52f"
+dependencies = [
+ "libc",
+ "memchr",
+ "ntapi",
+ "objc2-core-foundation",
+ "objc2-io-kit",
+ "rayon",
+ "windows 0.62.2",
 ]
 
 [[package]]
